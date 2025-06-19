@@ -56,7 +56,7 @@ passphrase 8           # generate 8 words
 Example output:
 
 ```
-acoustic fossil barrel embrace compute saddle
+acoustic-fossil-barrel-embrace-compute-saddle
 ```
 
 You can use these as-is or adapt them for password managers, GPG keys, etc.
