@@ -5,7 +5,7 @@ import sys
 from pathlib import Path
 
 WORDLIST_PATH = Path.home() / ".eff" / "wordlist.txt"
-DEFAULT_WORDS = 6
+DEFAULT_WORDS = 4
 
 def download_wordlist():
     import urllib.request
@@ -24,7 +24,7 @@ def load_wordlist():
 
 def generate_passphrase(num_words=DEFAULT_WORDS):
     words = load_wordlist()
-    return ' '.join(secrets.choice(words) for _ in range(num_words))
+    return '-'.join(secrets.choice(words) for _ in range(num_words))
 
 def main():
     if len(sys.argv) > 1:
